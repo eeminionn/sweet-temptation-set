@@ -5,6 +5,12 @@ test("carga la home y muestra la campaña", async ({ page }) => {
   await expect(page).toHaveTitle(/Sweet Temptation Set/);
   await expect(page.getByRole("heading", { name: "Sweet Temptation Set", exact: true })).toBeVisible();
   await expect(page.locator(".hero-callout__media")).toBeVisible();
+
+  const campaignImageRatio = await page.locator(".future-collab__hero img").evaluate((image) => {
+    const bounds = image.getBoundingClientRect();
+    return bounds.width / bounds.height;
+  });
+  expect(campaignImageRatio).toBeCloseTo(4 / 3, 2);
 });
 
 test("abre el menú móvil", async ({ page }) => {
