@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta
+      name="description"
+      content="Prototipo académico y no oficial inspirado en el homepage de Victoria's Secret Chile para una colaboración conceptual con Frugelé."
+    >
+    <title>Victoria's Secret x Frugelé — Concepto académico</title>
+    <link rel="icon" href="./assets/images/icons/logo-vs.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+    <div class="sr-only" id="ui-status" aria-live="polite" aria-atomic="true"></div>
+
+    <header class="site-header" data-sticky-header>
+      <div class="top-strip">
+        <p>Despacho gratis por compras sobre $70.000</p>
+      </div>
+
+      <div class="header-shell">
+        <div class="brand-rail">
+          <button class="brand-chip brand-chip--active demo-trigger" type="button" data-demo-label="Marca principal">
+            <span class="brand-chip__vs">Victoria's Secret</span>
+          </button>
+          <button class="brand-chip demo-trigger" type="button" data-demo-label="Submarca Pink">
+            <span class="brand-chip__pink">PINK</span>
+          </button>
+        </div>
+
+        <div class="header-row">
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-menu-toggle
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="menu-toggle__label">Menú</span>
+          </button>
+
+          <a class="site-logo" href="#main-content" aria-label="Inicio del prototipo">
+            <img
+              src="./assets/images/icons/logo-vs.svg"
+              alt="Wordmark Victoria's Secret"
+              width="799"
+              height="191"
+            >
+          </a>
+
+          <div class="header-search">
+            <label class="sr-only" for="site-search">Buscar</label>
+            <img src="./assets/images/icons/icon-search.svg" alt="" width="24" height="24" aria-hidden="true">
+            <input id="site-search" type="search" placeholder="Buscar" autocomplete="off">
+          </div>
+
+          <div class="header-actions">
+            <button class="icon-button demo-trigger" type="button" aria-label="Cuenta" data-demo-label="Cuenta">
+              <img src="./assets/images/icons/icon-user.svg" alt="" width="22" height="22" aria-hidden="true">
+            </button>
+            <button class="icon-button favorite-count" type="button" aria-label="Favoritos" data-favorites-open>
+              <img src="./assets/images/icons/icon-heart.svg" alt="" width="22" height="22" aria-hidden="true">
+            </button>
+            <button class="icon-button cart-button" type="button" aria-label="Carro demostrativo" data-cart-button>
+              <img src="./assets/images/icons/icon-bag.svg" alt="" width="22" height="22" aria-hidden="true">
+              <span class="cart-badge" data-cart-count>0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="prototype-notice">
+          Proyecto académico — colaboración conceptual no oficial
+        </div>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul>
+            <li><button class="nav-link nav-link--active demo-trigger" type="button" data-demo-label="Semi Annual Sale">Semi Annual Sale</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Novedades">Novedades</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Bras">Bras</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Panties">Panties</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Beauty">Beauty</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Pijamas">Pijamas</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Lencería">Lencería</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Apparel y Sport">Apparel y Sport</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Trajes de baño">Trajes de baño</button></li>
+            <li><button class="nav-link demo-trigger" type="button" data-demo-label="Accesorios">Accesorios</button></li>
+            <li>
+              <button
+                class="nav-link nav-link--future"
+                type="button"
+                data-future-trigger
+              >
+                VS x FRUGELÉ
+                <span class="coming-soon">Próximamente</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <aside class="mobile-drawer" id="mobile-nav" aria-hidden="true" data-mobile-drawer>
+        <div class="mobile-drawer__header">
+          <p>Menú demostrativo</p>
+          <button class="drawer-close" type="button" aria-label="Cerrar menú" data-drawer-close>
+            ×
+          </button>
+        </div>
+        <div class="mobile-drawer__notice">
+          Proyecto académico — no oficial
+        </div>
+        <nav aria-label="Navegación móvil">
+          <ul class="mobile-drawer__nav">
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Semi Annual Sale">Semi Annual Sale</button></li>
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Novedades">Novedades</button></li>
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Bras">Bras</button></li>
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Panties">Panties</button></li>
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Beauty">Beauty</button></li>
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Pijamas">Pijamas</button></li>
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Apparel y Sport">Apparel y Sport</button></li>
+            <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Trajes de baño">Trajes de baño</button></li>
+            <li>
+              <button class="mobile-link mobile-link--future" type="button" data-future-trigger>
+                VS x FRUGELÉ
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="drawer-backdrop" hidden data-drawer-backdrop></div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero-section section-frame">
+        <div class="hero-media">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/images/hero/hero-sale-mobile.jpg">
+            <img
+              src="./assets/images/hero/hero-sale-desktop.jpg"
+              alt="Campaña Semi Annual Sale recreada para el prototipo académico"
+              width="3200"
+              height="1800"
+              fetchpriority="high"
+            >
+          </picture>
+        </div>
+        <div class="hero-callout">
+          <p class="eyebrow">Recreación visual del homepage actual</p>
+          <h1>Una home conceptual con la misma energía comercial y editorial.</h1>
+          <p>
+            Réplica estática de alta fidelidad basada en la home pública de Victoria's Secret Chile,
+            preparada para sumar más adelante la colaboración VS x Frugelé.
+          </p>
+          <div class="hero-actions">
+            <button class="cta-button demo-trigger" type="button" data-demo-label="Explorar ofertas">Explorar ofertas</button>
+            <button class="cta-button cta-button--ghost demo-trigger" type="button" data-demo-label="Ver destacados">Ver destacados</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer-ticker section-frame" aria-label="Promociones destacadas">
+        <div class="offer-card">
+          <span>Bras 40% Off</span>
+          <button class="text-button demo-trigger" type="button" data-demo-label="Oferta bras">Ver detalle</button>
+        </div>
+        <div class="offer-card">
+          <span>Cuidado corporal 4x2</span>
+          <button class="text-button demo-trigger" type="button" data-demo-label="Oferta cuidado corporal">Ver detalle</button>
+        </div>
+        <div class="offer-card">
+          <span>Panties y regalos 30% Off</span>
+          <button class="text-button demo-trigger" type="button" data-demo-label="Oferta panties">Ver detalle</button>
+        </div>
+      </section>
+
+      <section class="full-bleed-banner">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/images/banners/sale-strip-mobile.jpg">
+          <img
+            src="./assets/images/banners/sale-strip-desktop.jpg"
+            alt="Banner promocional Semi Annual Sale 4x2"
+            width="6400"
+            height="1600"
+          >
+        </picture>
+      </section>
+
+      <section class="editorial-stack section-frame" aria-label="Módulos editoriales">
+        <article class="editorial-card editorial-card--wide">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/images/banners/beauty-mobile.jpg">
+            <img
+              src="./assets/images/banners/beauty-desktop.jpg"
+              alt="Editorial de mists y lociones"
+              width="3200"
+              height="1282"
+              loading="lazy"
+            >
+          </picture>
+          <div class="editorial-card__copy">
+            <p class="eyebrow">Beauty edit</p>
+            <h2>Mists y lociones con protagonismo visual de campaña.</h2>
+            <button class="cta-button cta-button--small demo-trigger" type="button" data-demo-label="Beauty edit">
+              Comprar ahora
+            </button>
+          </div>
+        </article>
+
+        <article class="editorial-card editorial-card--compact">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/images/banners/gift-set-mobile.jpg">
+            <img
+              src="./assets/images/banners/gift-set-desktop.jpg"
+              alt="Banner de set de regalo"
+              width="3200"
+              height="472"
+              loading="lazy"
+            >
+          </picture>
+          <div class="editorial-card__copy editorial-card__copy--light">
+            <p class="eyebrow">Selección curada</p>
+            <h2>Capas promocionales, fotografía fuerte y CTA simulada.</h2>
+            <button class="cta-button cta-button--light demo-trigger" type="button" data-demo-label="Selección curada">
+              Ver selección
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="full-bleed-banner full-bleed-banner--categories">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/images/categories/categories-mobile.jpg">
+          <img
+            src="./assets/images/categories/categories-desktop.jpg"
+            alt="Mosaico de categorías destacadas"
+            width="6380"
+            height="388"
+            loading="lazy"
+          >
+        </picture>
+      </section>
+
+      <section class="shop-grid section-frame" aria-labelledby="shop-grid-title">
+        <div class="section-heading">
+          <p class="eyebrow">Destacados</p>
+          <h2 id="shop-grid-title">Bloques comerciales inspirados en la home actual.</h2>
+        </div>
+
+        <div class="shop-grid__cards">
+          <article class="shop-card shop-card--rose">
+            <div class="shop-card__media">
+              <img
+                src="./assets/images/products/product-sale.png"
+                alt="Visual promocional de Semi Annual Sale"
+                width="354"
+                height="442"
+                loading="lazy"
+              >
+            </div>
+            <div class="shop-card__copy">
+              <h3>Sale picks</h3>
+              <p>Un bloque editorial compacto con jerarquía muy similar al sitio de referencia.</p>
+              <button class="text-button demo-trigger" type="button" data-demo-label="Sale picks">Explorar</button>
+            </div>
+          </article>
+
+          <article class="shop-card shop-card--cream">
+            <div class="shop-card__media">
+              <img
+                src="./assets/images/products/product-mists.png"
+                alt="Visual promocional de mists y lociones"
+                width="354"
+                height="442"
+                loading="lazy"
+              >
+            </div>
+            <div class="shop-card__copy">
+              <h3>Mists y lociones</h3>
+              <p>Paleta clara, producto centrado y CTA secundaria sin navegación real.</p>
+              <button class="text-button demo-trigger" type="button" data-demo-label="Mists y lociones">Explorar</button>
+            </div>
+          </article>
+
+          <article class="shop-card shop-card--white">
+            <div class="shop-card__media">
+              <img
+                src="./assets/images/products/product-panties.png"
+                alt="Visual promocional de panties"
+                width="354"
+                height="442"
+                loading="lazy"
+              >
+            </div>
+            <div class="shop-card__copy">
+              <h3>Panties</h3>
+              <p>Tarjeta corta para repetir la lógica de merchandising modular del homepage.</p>
+              <button class="text-button demo-trigger" type="button" data-demo-label="Panties">Explorar</button>
+            </div>
+          </article>
+
+          <article class="shop-card shop-card--blush">
+            <div class="shop-card__media">
+              <img
+                src="./assets/images/products/product-apparel.png"
+                alt="Visual promocional de apparel"
+                width="354"
+                height="442"
+                loading="lazy"
+              >
+            </div>
+            <div class="shop-card__copy">
+              <h3>Apparel y sport</h3>
+              <p>Compuesto visual pensado para mantener ritmo entre banners, mosaicos y cards.</p>
+              <button class="text-button demo-trigger" type="button" data-demo-label="Apparel y sport">Explorar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-carousel section-frame" aria-labelledby="product-carousel-title">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Más vendidos</p>
+            <h2 id="product-carousel-title">Carrusel demostrativo con acciones locales.</h2>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-button" type="button" data-carousel-prev aria-label="Anterior">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button class="carousel-button" type="button" data-carousel-next aria-label="Siguiente">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="carousel"
+          data-carousel
+          data-autoplay="true"
+          data-autoplay-interval="5500"
+          aria-roledescription="carousel"
+        >
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-carousel-track>
+              <article class="product-card" data-carousel-slide tabindex="0">
+                <button class="favorite-toggle" type="button" aria-pressed="false" data-favorite-toggle>
+                  <span class="sr-only">Agregar a favoritos</span>
+                  ♡
+                </button>
+                <img
+                  src="./assets/images/products/product-sale.png"
+                  alt="Producto promocional de temporada"
+                  width="354"
+                  height="442"
+                  loading="lazy"
+                >
+                <span class="product-badge">Novedad</span>
+                <h3>Seasonal sale edit</h3>
+                <p class="product-price">
+                  <span class="product-price__current">$39.990</span>
+                  <span class="product-price__old">$54.990</span>
+                </p>
+                <div class="swatches" aria-label="Variantes de color">
+                  <span class="swatch swatch--rose"></span>
+                  <span class="swatch swatch--berry"></span>
+                  <span class="swatch swatch--pearl"></span>
+                </div>
+                <button class="cta-button cta-button--small" type="button" data-add-to-cart>
+                  Agregar al carro
+                </button>
+              </article>
+
+              <article class="product-card" data-carousel-slide tabindex="0">
+                <button class="favorite-toggle" type="button" aria-pressed="false" data-favorite-toggle>
+                  <span class="sr-only">Agregar a favoritos</span>
+                  ♡
+                </button>
+                <img
+                  src="./assets/images/products/product-mists.png"
+                  alt="Producto de mists y lociones"
+                  width="354"
+                  height="442"
+                  loading="lazy"
+                >
+                <span class="product-badge product-badge--dark">Best seller</span>
+                <h3>Mist duo highlight</h3>
+                <p class="product-price">
+                  <span class="product-price__current">$36.990</span>
+                  <span class="product-price__old">$44.990</span>
+                </p>
+                <div class="swatches" aria-label="Variantes de color">
+                  <span class="swatch swatch--champagne"></span>
+                  <span class="swatch swatch--pink"></span>
+                </div>
+                <button class="cta-button cta-button--small" type="button" data-add-to-cart>
+                  Agregar al carro
+                </button>
+              </article>
+
+              <article class="product-card" data-carousel-slide tabindex="0">
+                <button class="favorite-toggle" type="button" aria-pressed="false" data-favorite-toggle>
+                  <span class="sr-only">Agregar a favoritos</span>
+                  ♡
+                </button>
+                <img
+                  src="./assets/images/products/product-panties.png"
+                  alt="Producto promocional de panties"
+                  width="354"
+                  height="442"
+                  loading="lazy"
+                >
+                <span class="product-badge">4x2</span>
+                <h3>Panties cotton pack</h3>
+                <p class="product-price">
+                  <span class="product-price__current">$41.990</span>
+                  <span class="product-price__old">$55.990</span>
+                </p>
+                <div class="swatches" aria-label="Variantes de color">
+                  <span class="swatch swatch--black"></span>
+                  <span class="swatch swatch--taupe"></span>
+                  <span class="swatch swatch--powder"></span>
+                </div>
+                <button class="cta-button cta-button--small" type="button" data-add-to-cart>
+                  Agregar al carro
+                </button>
+              </article>
+
+              <article class="product-card" data-carousel-slide tabindex="0">
+                <button class="favorite-toggle" type="button" aria-pressed="false" data-favorite-toggle>
+                  <span class="sr-only">Agregar a favoritos</span>
+                  ♡
+                </button>
+                <img
+                  src="./assets/images/products/product-apparel.png"
+                  alt="Producto promocional de apparel"
+                  width="354"
+                  height="442"
+                  loading="lazy"
+                >
+                <span class="product-badge product-badge--dark">Oferta</span>
+                <h3>Sport essentials</h3>
+                <p class="product-price">
+                  <span class="product-price__current">$52.990</span>
+                  <span class="product-price__old">$72.990</span>
+                </p>
+                <div class="swatches" aria-label="Variantes de color">
+                  <span class="swatch swatch--navy"></span>
+                  <span class="swatch swatch--white"></span>
+                </div>
+                <button class="cta-button cta-button--small" type="button" data-add-to-cart>
+                  Agregar al carro
+                </button>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-dots" data-carousel-dots aria-label="Seleccionar slide"></div>
+        </div>
+
+        <p class="demo-note">
+          Carro demostrativo: el contador es ficticio y se reinicia al recargar.
+        </p>
+      </section>
+
+      <section class="future-collab section-frame" aria-labelledby="future-collab-title">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Preparado para expansión</p>
+            <h2 id="future-collab-title">Espacio reservado para VS x FRUGELÉ.</h2>
+          </div>
+          <button class="cta-button cta-button--ghost" type="button" data-future-trigger>
+            Ver aviso
+          </button>
+        </div>
+
+        <!-- FUTURA SECCIÓN VS X FRUGELÉ: contenido pendiente de imágenes y dirección creativa -->
+        <div class="future-collab__layout">
+          <img
+            src="./assets/images/placeholders/frugele-future.svg"
+            alt="Placeholder de la futura campaña conceptual VS x Frugelé"
+            width="1440"
+            height="900"
+            loading="lazy"
+          >
+          <div class="future-collab__copy">
+            <p>Colección conceptual en desarrollo.</p>
+            <ul>
+              <li>Hero de campaña</li>
+              <li>Galería de productos</li>
+              <li>Historia de la colaboración</li>
+              <li>Carrusel y lookbook</li>
+              <li>Productos destacados</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="future-collab__stub" hidden aria-hidden="true">
+          <div class="stub-box"></div>
+          <div class="stub-box"></div>
+          <div class="stub-box"></div>
+        </section>
+      </section>
+
+      <section class="newsletter section-frame" aria-labelledby="newsletter-title">
+        <div class="newsletter__copy">
+          <p class="eyebrow">Newsletter</p>
+          <h2 id="newsletter-title">Suscríbete visualmente, sin almacenar datos reales.</h2>
+          <p>
+            El formulario valida formato, limpia el campo al enviar y confirma que no se guardó información.
+          </p>
+        </div>
+        <form class="newsletter__form" data-newsletter-form novalidate>
+          <label for="newsletter-email">Correo electrónico</label>
+          <div class="newsletter__row">
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              inputmode="email"
+              placeholder="tuemail@ejemplo.com"
+              autocomplete="off"
+              required
+            >
+            <button class="cta-button" type="submit">Suscribirme</button>
+          </div>
+          <p class="newsletter__feedback" data-newsletter-feedback></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__top section-frame">
+        <div>
+          <h2>Proyecto académico — colaboración conceptual no oficial</h2>
+          <p>
+            Esta maqueta no pertenece a Victoria's Secret ni a Ambrosoli. No procesa pagos,
+            no recopila datos y no conecta con el comercio real.
+          </p>
+        </div>
+        <div class="site-footer__social">
+          <a href="#" class="demo-trigger" data-demo-label="Facebook">
+            <img src="./assets/images/social/facebook.png" alt="Facebook" width="2814" height="1917" loading="lazy">
+          </a>
+          <a href="#" class="demo-trigger" data-demo-label="Instagram">
+            <img src="./assets/images/social/instagram.png" alt="Instagram" width="3625" height="1917" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="site-footer__links section-frame">
+        <div>
+          <h3>Ayuda</h3>
+          <ul>
+            <li><button class="footer-link demo-trigger" type="button" data-demo-label="Centro de ayuda">Centro de ayuda</button></li>
+            <li><button class="footer-link demo-trigger" type="button" data-demo-label="Seguimiento de pedidos">Seguimiento de pedidos</button></li>
+            <li><button class="footer-link demo-trigger" type="button" data-demo-label="Cambios y devoluciones">Cambios y devoluciones</button></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sobre el prototipo</h3>
+          <ul>
+            <li><button class="footer-link demo-trigger" type="button" data-demo-label="Estructura conceptual">Estructura conceptual</button></li>
+            <li><button class="footer-link demo-trigger" type="button" data-demo-label="Tiendas">Tiendas</button></li>
+            <li><button class="footer-link demo-trigger" type="button" data-demo-label="Créditos y fuentes">Créditos y fuentes</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom section-frame">
+        <p>2026 © Prototipo académico local. Las marcas y campañas citadas pertenecen a sus respectivos titulares.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/carousel.js" defer></script>
+    <script src="./assets/js/navigation.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
