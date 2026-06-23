@@ -63,8 +63,7 @@
   .frugele-story,
   .frugele-flavors__grid,
   .frugele-products,
-  .collection-manifesto__grid,
-  .collection-focus__grid,
+  .collection-banner,
   .collection-flavors,
   .collection-handcreams__grid {
     grid-template-columns: 1fr;
@@ -135,22 +134,40 @@
   }
 
   .collection-header {
-    grid-template-columns: 1fr;
-    justify-items: start;
-    padding: 1rem 0 0.8rem;
+    gap: 0.55rem;
+    grid-template-columns: auto 1fr auto;
+    min-height: 3.6rem;
+    padding: 0.32rem 0;
   }
 
   .collection-wordmark {
-    justify-self: start;
+    justify-self: center;
+  }
+
+  .collection-wordmark img {
+    width: 8.75rem;
+  }
+
+  .collection-wordmark span {
+    font-size: 0.88rem;
   }
 
   .collection-header__actions {
-    justify-self: start;
+    display: none;
+  }
+
+  .collection-back {
+    font-size: 0.64rem;
+  }
+
+  .collection-site-header .top-strip {
+    max-height: 0.95rem;
+    padding: 0.08rem 0.75rem;
   }
 
   .collection-hero {
-    min-height: 92vh;
-    padding-block: 7rem 2rem;
+    min-height: 62vh;
+    padding-block: 2rem 1.5rem;
   }
 
   .icon-button {
@@ -171,8 +188,7 @@
   .frugele-story__card h3,
   .frugele-flavor-card h4,
   .frugele-gallery__caption h4,
-  .collection-manifesto__panel h3,
-  .collection-focus__card h3,
+  .collection-banner__copy h2,
   .collection-lineup__copy h3,
   .collection-flavor__body h3,
   .collection-closing h2 {
@@ -180,11 +196,7 @@
   }
 
   .collection-hero__content h1 {
-    font-size: clamp(2.7rem, 14vw, 4.4rem);
-  }
-
-  .collection-hero__quote strong {
-    font-size: 1.2rem;
+    font-size: clamp(2.5rem, 12vw, 4rem);
   }
 
   .hero-callout h1,
@@ -225,8 +237,7 @@
   }
 
   .collection-gallery__grid,
-  .collection-lineup,
-  .collection-focus__card {
+  .collection-lineup {
     grid-template-columns: 1fr;
   }
 
@@ -234,9 +245,7 @@
   .frugele-gallery__caption,
   .frugele-products__item p,
   .frugele-story__card,
-  .collection-manifesto__panel,
-  .collection-focus__text,
-  .collection-focus__card div,
+  .collection-banner__copy,
   .collection-flavor__body,
   .collection-lineup__copy,
   .collection-handcreams__item figcaption {

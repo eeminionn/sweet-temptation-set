@@ -1,9 +1,9 @@
 const { test, expect } = require("@playwright/test");
 
-test("carga la home con aviso académico", async ({ page }) => {
+test("carga la home y muestra la campaña", async ({ page }) => {
   await page.goto("/");
-  await expect(page).toHaveTitle(/Concepto académico/);
-  await expect(page.locator("text=Proyecto académico — colaboración conceptual no oficial").first()).toBeVisible();
+  await expect(page).toHaveTitle(/Sweet Temptation Set/);
+  await expect(page.getByRole("heading", { name: "Too Sweet to Forget.", exact: true })).toBeVisible();
 });
 
 test("abre el menú móvil", async ({ page }) => {
@@ -21,7 +21,7 @@ test("avanza el carrusel", async ({ page }) => {
   await expect(track).not.toHaveAttribute("style", initial || "");
 });
 
-test("incrementa el carro demostrativo", async ({ page }) => {
+test("incrementa el carro", async ({ page }) => {
   await page.goto("/");
   await page.locator("[data-add-to-cart]").first().click();
   await expect(page.locator("[data-cart-count]")).toHaveText("1");
@@ -47,6 +47,6 @@ test("valida y limpia el newsletter", async ({ page }) => {
 
   await email.fill("demo@ejemplo.com");
   await submit.click();
-  await expect(feedback).toContainText("Formulario demostrativo: no se almacenó información.");
+  await expect(feedback).toContainText("Welcome, Angel. Revisa tu bandeja de entrada.");
   await expect(email).toHaveValue("");
 });

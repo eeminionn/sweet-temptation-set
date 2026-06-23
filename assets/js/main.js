@@ -4,6 +4,7 @@
     const cartCount = document.querySelector("[data-cart-count]");
     const newsletterForm = document.querySelector("[data-newsletter-form]");
     const newsletterFeedback = document.querySelector("[data-newsletter-feedback]");
+    const autoplayVideo = document.querySelector("[data-autoplay-video]");
     let toastTimeout = null;
     let cartItems = 0;
 
@@ -28,8 +29,8 @@
 
     document.querySelectorAll(".demo-trigger").forEach((button) => {
       button.addEventListener("click", () => {
-        const label = button.dataset.demoLabel || "Sección demostrativa";
-        showToast(`${label}: función no disponible en este prototipo.`);
+        const label = button.dataset.demoLabel || "Esta selección";
+        showToast(`${label}: próximamente.`);
       });
     });
 
@@ -53,7 +54,7 @@
       button.addEventListener("click", () => {
         cartItems += 1;
         cartCount.textContent = String(cartItems);
-        showToast("Producto agregado al carro demostrativo.");
+        showToast("Producto agregado al carro.");
       });
     });
 
@@ -64,7 +65,7 @@
         button.innerHTML = `<span class="sr-only">${
           isPressed ? "Agregar a favoritos" : "Quitar de favoritos"
         }</span>${isPressed ? "♡" : "♥"}`;
-        showToast(isPressed ? "Favorito eliminado." : "Favorito guardado localmente.");
+        showToast(isPressed ? "Favorito eliminado." : "Guardado en tus favoritos.");
       });
     });
 
@@ -72,8 +73,27 @@
 
     if (cartButton) {
       cartButton.addEventListener("click", () => {
-        showToast("Carro demostrativo: no existe checkout ni pago real.");
+        showToast(cartItems ? `${cartItems} producto${cartItems === 1 ? "" : "s"} en tu carro.` : "Tu carro está vacío.");
       });
+    }
+
+    if (autoplayVideo instanceof HTMLVideoElement) {
+      autoplayVideo.muted = true;
+      autoplayVideo.defaultMuted = true;
+
+      const tryPlay = () => {
+        const playPromise = autoplayVideo.play();
+
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch(() => {
+            // Some browsers delay autoplay until more media is buffered.
+          });
+        }
+      };
+
+      autoplayVideo.addEventListener("canplay", tryPlay, { once: true });
+      autoplayVideo.addEventListener("loadeddata", tryPlay, { once: true });
+      tryPlay();
     }
 
     if (newsletterForm && newsletterFeedback) {
@@ -93,10 +113,9 @@
 
         emailInput.removeAttribute("aria-invalid");
         newsletterFeedback.dataset.state = "success";
-        newsletterFeedback.textContent =
-          "Formulario demostrativo: no se almacenó información.";
+        newsletterFeedback.textContent = "Welcome, Angel. Revisa tu bandeja de entrada.";
         emailInput.value = "";
-        showToast("Formulario demostrativo enviado sin almacenar datos.");
+        showToast("¡Gracias por suscribirte!");
       });
     }
   });
