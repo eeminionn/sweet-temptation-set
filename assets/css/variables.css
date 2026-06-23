@@ -1,0 +1,99 @@
+:root {
+  --color-background: #ffffff;
+  --color-surface: #fcf7f8;
+  --color-surface-strong: #f4dde3;
+  --color-text: #231d1d;
+  --color-muted: #6d6061;
+  --color-border: #ece4e5;
+  --color-accent: #df5aa2;
+  --color-accent-dark: #c8458d;
+  --color-accent-soft: #f8dce8;
+  --color-black: #121010;
+  --color-white: #ffffff;
+  --color-success: #177245;
+  --shadow-soft: 0 18px 40px rgba(35, 29, 29, 0.08);
+  --shadow-card: 0 12px 24px rgba(0, 0, 0, 0.06);
+  --radius-sm: 0.55rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.75rem;
+  --font-sans: "Public Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Cormorant Garamond", "Bodoni 72", "Didot", "Times New Roman", serif;
+  --container-max-width: 1440px;
+  --container-gutter: clamp(1rem, 2vw, 2rem);
+  --section-space: clamp(2.5rem, 4vw, 4.5rem);
+  --transition-fast: 180ms ease;
+  --transition-medium: 320ms ease;
+  --header-height: 10.5rem;
+  --z-skip: 60;
+  --z-header: 50;
+  --z-drawer: 70;
+  --z-toast: 80;
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/public-sans-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/public-sans-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/public-sans-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/public-sans-600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/public-sans-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorant-garamond-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorant-garamond-600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/cormorant-garamond-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
