@@ -36,21 +36,57 @@
     text-transform: uppercase;
   }
 
-  .header-search,
   .main-nav {
     display: none;
   }
 
   .site-logo {
+    display: block;
     justify-self: center;
     width: clamp(11rem, 32vw, 16rem);
+  }
+
+  .header-search {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 0.2rem;
+    grid-column: 3;
+    margin-top: 0;
   }
 
   .hero-section,
   .future-collab__layout,
   .newsletter,
-  .site-footer__top {
+  .site-footer__top,
+  .frugele-story,
+  .frugele-flavors__grid,
+  .frugele-products,
+  .collection-manifesto__grid,
+  .collection-focus__grid,
+  .collection-flavors,
+  .collection-handcreams__grid {
     grid-template-columns: 1fr;
+  }
+
+  .frugele-gallery__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .collection-gallery__grid,
+  .collection-lineup {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .frugele-gallery__feature,
+  .frugele-gallery__feature--wide,
+  .frugele-gallery__feature--packaging {
+    grid-column: span 1;
+  }
+
+  .collection-gallery__item--portrait {
+    grid-row: span 1;
   }
 
   .offer-ticker {
@@ -78,7 +114,7 @@
   }
 
   .brand-rail {
-    padding-top: 0.6rem;
+    padding-top: 0.45rem;
   }
 
   .brand-chip__vs {
@@ -98,14 +134,28 @@
     gap: 0.05rem;
   }
 
+  .collection-header {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    padding: 1rem 0 0.8rem;
+  }
+
+  .collection-wordmark {
+    justify-self: start;
+  }
+
+  .collection-header__actions {
+    justify-self: start;
+  }
+
+  .collection-hero {
+    min-height: 92vh;
+    padding-block: 7rem 2rem;
+  }
+
   .icon-button {
     height: 2.3rem;
     width: 2.3rem;
-  }
-
-  .prototype-notice {
-    font-size: 0.64rem;
-    margin-bottom: 0.5rem;
   }
 
   main {
@@ -116,6 +166,25 @@
   .future-collab__copy {
     border-radius: 1.2rem;
     padding: 1.25rem;
+  }
+
+  .frugele-story__card h3,
+  .frugele-flavor-card h4,
+  .frugele-gallery__caption h4,
+  .collection-manifesto__panel h3,
+  .collection-focus__card h3,
+  .collection-lineup__copy h3,
+  .collection-flavor__body h3,
+  .collection-closing h2 {
+    font-size: 1.45rem;
+  }
+
+  .collection-hero__content h1 {
+    font-size: clamp(2.7rem, 14vw, 4.4rem);
+  }
+
+  .collection-hero__quote strong {
+    font-size: 1.2rem;
   }
 
   .hero-callout h1,
@@ -149,6 +218,29 @@
 
   .product-card {
     flex-basis: 100%;
+  }
+
+  .frugele-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-gallery__grid,
+  .collection-lineup,
+  .collection-focus__card {
+    grid-template-columns: 1fr;
+  }
+
+  .frugele-flavor-card__body,
+  .frugele-gallery__caption,
+  .frugele-products__item p,
+  .frugele-story__card,
+  .collection-manifesto__panel,
+  .collection-focus__text,
+  .collection-focus__card div,
+  .collection-flavor__body,
+  .collection-lineup__copy,
+  .collection-handcreams__item figcaption {
+    padding: 1rem;
   }
 
   .carousel {

@@ -33,9 +33,19 @@
       });
     });
 
-    document.querySelectorAll("[data-future-trigger]").forEach((button) => {
+    document.querySelectorAll("[data-scroll-target]").forEach((button) => {
       button.addEventListener("click", () => {
-        showToast("Colección conceptual en desarrollo.");
+        const targetId = button.dataset.scrollTarget;
+        const target = targetId ? document.getElementById(targetId) : null;
+
+        if (!target) {
+          return;
+        }
+
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
       });
     });
 

@@ -27,10 +27,12 @@ test("incrementa el carro demostrativo", async ({ page }) => {
   await expect(page.locator("[data-cart-count]")).toHaveText("1");
 });
 
-test("muestra el aviso de VS x FRUGELÉ", async ({ page }) => {
+test("redirige a la landing de VS x FRUGELÉ", async ({ page }) => {
   await page.goto("/");
-  await page.locator("[data-future-trigger]").first().click();
-  await expect(page.locator("[data-toast]")).toContainText("Colección conceptual en desarrollo");
+  await page.getByRole("link", { name: /VS x FRUGELÉ/i }).first().click();
+  await expect(page).toHaveURL(/frugele\.html$/);
+  await expect(page).toHaveTitle(/Sweet Temptation Set/);
+  await expect(page.locator("video.collection-hero__video")).toBeVisible();
 });
 
 test("valida y limpia el newsletter", async ({ page }) => {

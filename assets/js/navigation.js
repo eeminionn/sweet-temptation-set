@@ -27,11 +27,23 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    const stickyHeader = document.querySelector("[data-sticky-header]");
     const toggle = document.querySelector("[data-menu-toggle]");
     const drawer = document.querySelector("[data-mobile-drawer]");
     const backdrop = document.querySelector("[data-drawer-backdrop]");
     const closeButton = document.querySelector("[data-drawer-close]");
     let returnFocusTarget = null;
+
+    const syncHeaderState = () => {
+      if (!stickyHeader) {
+        return;
+      }
+
+      stickyHeader.classList.toggle("site-header--condensed", window.scrollY > 24);
+    };
+
+    syncHeaderState();
+    window.addEventListener("scroll", syncHeaderState, { passive: true });
 
     if (!toggle || !drawer || !backdrop || !closeButton) {
       return;
@@ -75,6 +87,10 @@
       }
 
       trapFocus(drawer, event);
+    });
+
+    drawer.querySelectorAll("[data-scroll-target]").forEach((button) => {
+      button.addEventListener("click", closeDrawer);
     });
   });
 })();

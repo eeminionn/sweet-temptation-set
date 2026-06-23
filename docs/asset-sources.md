@@ -55,3 +55,21 @@ Consulta realizada el 22 de junio de 2026.
 | Archivo local | Origen | Uso |
 | --- | --- | --- |
 | `assets/images/placeholders/frugele-future.svg` | Creado para este prototipo | Placeholder de futura sección VS x FRUGELÉ |
+
+## Assets locales aportados para VS x Frugelé
+
+| Archivo local | Origen | Uso |
+| --- | --- | --- |
+| `assets/images/frugele/frugele-lineup.jpg` | Recurso local entregado por el usuario | Hero principal de la sección VS x Frugelé |
+| `assets/images/frugele/frugele-mists-lineup.jpg` | Recurso local entregado por el usuario | Lineup de aromas / bloque editorial |
+| `assets/images/frugele/frugele-orange-handcream.jpg` | Recurso local entregado por el usuario | Card de producto orange |
+| `assets/images/frugele/frugele-cherry-handcream.jpg` | Recurso local entregado por el usuario | Card de producto cherry |
+| `assets/images/frugele/frugele-lemon-handcream.jpg` | Recurso local entregado por el usuario | Card de producto lemon |
+| `assets/images/frugele/frugele-cherry-lotion.jpg` | Recurso local entregado por el usuario | Aroma destacado cherry |
+| `assets/images/frugele/frugele-orange-lotion.jpg` | Recurso local entregado por el usuario | Aroma destacado orange |
+| `assets/images/frugele/frugele-lemon-lotion.jpg` | Recurso local entregado por el usuario | Aroma destacado lemon |
+| `assets/images/frugele/frugele-model-mist.jpg` | Recurso local entregado por el usuario | Visual editorial con modelo |
+| `assets/images/frugele/frugele-model-gloss.jpg` | Recurso local entregado por el usuario | Visual editorial con gloss gigante |
+| `assets/images/frugele/frugele-packaging.jpg` | Recurso local entregado por el usuario | Packaging / gifting premium |
+| `assets/videos/frugele-product-hero.mp4` | Recurso local entregado por el usuario | Video hero de producto para landing dedicada |
+| `assets/images/frugele/posters/frugele-product-hero-poster.png` | Thumbnail generado localmente desde el video del usuario | Poster del video hero |

@@ -20,7 +20,7 @@
     <div class="sr-only" id="ui-status" aria-live="polite" aria-atomic="true"></div>
 
     <header class="site-header" data-sticky-header>
-      <div class="top-strip">
+      <div class="top-strip" data-scroll-hide>
         <p>Despacho gratis por compras sobre $70.000</p>
       </div>
 
@@ -77,10 +77,6 @@
           </div>
         </div>
 
-        <div class="prototype-notice">
-          Proyecto académico — colaboración conceptual no oficial
-        </div>
-
         <nav class="main-nav" aria-label="Navegación principal">
           <ul>
             <li><button class="nav-link nav-link--active demo-trigger" type="button" data-demo-label="Semi Annual Sale">Semi Annual Sale</button></li>
@@ -94,14 +90,13 @@
             <li><button class="nav-link demo-trigger" type="button" data-demo-label="Trajes de baño">Trajes de baño</button></li>
             <li><button class="nav-link demo-trigger" type="button" data-demo-label="Accesorios">Accesorios</button></li>
             <li>
-              <button
+              <a
                 class="nav-link nav-link--future"
-                type="button"
-                data-future-trigger
+                href="./frugele.html"
               >
                 VS x FRUGELÉ
-                <span class="coming-soon">Próximamente</span>
-              </button>
+                <span class="coming-soon">Nueva collab</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -114,9 +109,6 @@
             ×
           </button>
         </div>
-        <div class="mobile-drawer__notice">
-          Proyecto académico — no oficial
-        </div>
         <nav aria-label="Navegación móvil">
           <ul class="mobile-drawer__nav">
             <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Semi Annual Sale">Semi Annual Sale</button></li>
@@ -128,9 +120,9 @@
             <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Apparel y Sport">Apparel y Sport</button></li>
             <li><button class="mobile-link demo-trigger" type="button" data-demo-label="Trajes de baño">Trajes de baño</button></li>
             <li>
-              <button class="mobile-link mobile-link--future" type="button" data-future-trigger>
+              <a class="mobile-link mobile-link--future" href="./frugele.html">
                 VS x FRUGELÉ
-              </button>
+              </a>
             </li>
           </ul>
         </nav>
@@ -153,15 +145,15 @@
           </picture>
         </div>
         <div class="hero-callout">
-          <p class="eyebrow">Recreación visual del homepage actual</p>
-          <h1>Una home conceptual con la misma energía comercial y editorial.</h1>
+          <p class="eyebrow">Nueva colaboración cápsula</p>
+          <h1>Sweet Temptation Set: la nueva entrada al universo VS x Frugelé.</h1>
           <p>
-            Réplica estática de alta fidelidad basada en la home pública de Victoria's Secret Chile,
-            preparada para sumar más adelante la colaboración VS x Frugelé.
+            Sweet Temptation Set transforma la tentación en color, textura y deseo contemporáneo,
+            con un tono más sofisticado y una landing separada para desarrollar la colaboración.
           </p>
           <div class="hero-actions">
-            <button class="cta-button demo-trigger" type="button" data-demo-label="Explorar ofertas">Explorar ofertas</button>
-            <button class="cta-button cta-button--ghost demo-trigger" type="button" data-demo-label="Ver destacados">Ver destacados</button>
+            <a class="cta-button" href="./frugele.html">Descubrir colección</a>
+            <a class="cta-button cta-button--ghost" href="./frugele.html#campaign-film">Ver campaña</a>
           </div>
         </div>
       </section>
@@ -469,43 +461,41 @@
         </p>
       </section>
 
-      <section class="future-collab section-frame" aria-labelledby="future-collab-title">
+      <section class="future-collab section-frame" id="vs-frugele" aria-labelledby="future-collab-title">
         <div class="section-heading section-heading--split">
           <div>
-            <p class="eyebrow">Preparado para expansión</p>
-            <h2 id="future-collab-title">Espacio reservado para VS x FRUGELÉ.</h2>
+            <p class="eyebrow">Pincelada de campaña</p>
+            <h2 id="future-collab-title">Una entrada breve al universo VS x Frugelé.</h2>
           </div>
-          <button class="cta-button cta-button--ghost" type="button" data-future-trigger>
-            Ver aviso
-          </button>
+          <a class="cta-button cta-button--ghost" href="./frugele.html">Ir a la landing</a>
         </div>
 
-        <!-- FUTURA SECCIÓN VS X FRUGELÉ: contenido pendiente de imágenes y dirección creativa -->
         <div class="future-collab__layout">
-          <img
-            src="./assets/images/placeholders/frugele-future.svg"
-            alt="Placeholder de la futura campaña conceptual VS x Frugelé"
-            width="1440"
-            height="900"
-            loading="lazy"
-          >
+          <figure class="future-collab__hero">
+            <img
+              src="./assets/images/frugele/frugele-lineup.jpg"
+              alt="Lineup principal de la colección conceptual Victoria's Secret x Frugelé"
+              width="1448"
+              height="1086"
+              loading="lazy"
+            >
+          </figure>
           <div class="future-collab__copy">
-            <p>Colección conceptual en desarrollo.</p>
+            <p class="future-collab__lede">Sweet Temptation Set</p>
+            <p>
+              En el home queda solo una pincelada: brillo, fruta, escala y una promesa visual clara.
+              La historia completa vive en una landing dedicada con video hero y una dirección más editorial.
+            </p>
             <ul>
-              <li>Hero de campaña</li>
-              <li>Galería de productos</li>
-              <li>Historia de la colaboración</li>
-              <li>Carrusel y lookbook</li>
-              <li>Productos destacados</li>
+              <li>Hero en video con foco producto</li>
+              <li>Concepto final alineado al PDF entregado</li>
+              <li>Selección de aromas, visuales y packaging</li>
             </ul>
+            <div class="hero-actions">
+              <a class="cta-button" href="./frugele.html">Entrar a VS x Frugelé</a>
+            </div>
           </div>
         </div>
-
-        <section class="future-collab__stub" hidden aria-hidden="true">
-          <div class="stub-box"></div>
-          <div class="stub-box"></div>
-          <div class="stub-box"></div>
-        </section>
       </section>
 
       <section class="newsletter section-frame" aria-labelledby="newsletter-title">
