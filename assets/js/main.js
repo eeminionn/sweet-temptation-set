@@ -80,20 +80,39 @@
     if (autoplayVideo instanceof HTMLVideoElement) {
       autoplayVideo.muted = true;
       autoplayVideo.defaultMuted = true;
+      autoplayVideo.playsInline = true;
+      autoplayVideo.setAttribute("muted", "");
+      autoplayVideo.setAttribute("playsinline", "");
+      autoplayVideo.setAttribute("webkit-playsinline", "");
 
       const tryPlay = () => {
+        if (!autoplayVideo.paused) {
+          return;
+        }
+
         const playPromise = autoplayVideo.play();
 
         if (playPromise && typeof playPromise.catch === "function") {
-          playPromise.catch(() => {
-            // Some browsers delay autoplay until more media is buffered.
-          });
+          playPromise.catch(() => {});
         }
       };
 
-      autoplayVideo.addEventListener("canplay", tryPlay, { once: true });
-      autoplayVideo.addEventListener("loadeddata", tryPlay, { once: true });
-      tryPlay();
+      ["loadedmetadata", "loadeddata", "canplay", "canplaythrough"].forEach((eventName) => {
+        autoplayVideo.addEventListener(eventName, tryPlay);
+      });
+
+      window.addEventListener("pageshow", tryPlay);
+      window.addEventListener("focus", tryPlay);
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) {
+          tryPlay();
+        }
+      });
+
+      window.requestAnimationFrame(tryPlay);
+      [250, 1000, 2500].forEach((delay) => {
+        window.setTimeout(tryPlay, delay);
+      });
     }
 
     if (newsletterForm && newsletterFeedback) {

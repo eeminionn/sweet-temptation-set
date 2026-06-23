@@ -35,6 +35,15 @@ test("redirige a la landing de VS x FRUGELÉ", async ({ page }) => {
   await expect(page.locator("video.collection-hero__video")).toBeVisible();
 });
 
+test("inicia el video de campaña sin hacer scroll", async ({ page }) => {
+  await page.goto("/frugele.html");
+  const video = page.locator("video.collection-hero__video");
+
+  await expect.poll(async () =>
+    video.evaluate((element) => !element.paused && element.currentTime > 0)
+  ).toBe(true);
+});
+
 test("valida y limpia el newsletter", async ({ page }) => {
   await page.goto("/");
   const email = page.locator("#newsletter-email");
