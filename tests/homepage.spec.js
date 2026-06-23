@@ -3,7 +3,8 @@ const { test, expect } = require("@playwright/test");
 test("carga la home y muestra la campaña", async ({ page }) => {
   await page.goto("/");
   await expect(page).toHaveTitle(/Sweet Temptation Set/);
-  await expect(page.getByRole("heading", { name: "Too Sweet to Forget.", exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Sweet Temptation Set", exact: true })).toBeVisible();
+  await expect(page.locator(".hero-callout__media")).toBeVisible();
 });
 
 test("abre el menú móvil", async ({ page }) => {

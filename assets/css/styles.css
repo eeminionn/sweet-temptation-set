@@ -388,7 +388,20 @@ main {
   border: 1px solid rgba(236, 228, 229, 0.95);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
-  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero-callout__media {
+  aspect-ratio: 16 / 9;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: center 28%;
+  width: 100%;
+}
+
+.hero-callout__content {
+  padding: clamp(1.4rem, 2vw, 2rem);
 }
 
 .eyebrow {
@@ -416,11 +429,11 @@ main {
 }
 
 .hero-callout h1 {
-  font-size: clamp(2.5rem, 4vw, 4.2rem);
+  font-size: clamp(2.25rem, 3vw, 3.2rem);
   margin-bottom: 1rem;
 }
 
-.hero-callout p:last-of-type {
+.hero-callout__content > p:not(.eyebrow) {
   color: var(--color-muted);
   font-size: 1rem;
 }
